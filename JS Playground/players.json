@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "position": "Midfielder",
+        "image": "background1.jpg",
+        "age": 28,
+        "goals": 15,
+        "assists": 10,
+        "profileLink": "player1.html"
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "position": "Forward",
+        "image": "background2.jpg",
+        "age": 25,
+        "goals": 20,
+        "assists": 5,
+        "profileLink": "player2.html"
+    },
+    {
+        "id": 3,
+        "name": "Saviola",
+        "position": "Defender",
+        "image": "background4.jpg",
+        "age": 30,
+        "goals": 3,
+        "assists": 2,
+        "profileLink": "player3.html"
+    }
+]

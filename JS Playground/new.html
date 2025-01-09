@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Website</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+  <style>
+    body {
+        background-size:auto; /* Ensures the background covers the entire screen */
+        background-position:auto; /* Centers the background */
+        transition: background-image 1s ease-in-out; /* Smooth transition for changing the background */
+    }
+</style>
+    
+    <script>
+        // Array of wallpaper images
+        const wallpapers = [
+            "Images/CFC.jpg",
+            "Player-images/Players46.jpg",
+            "Player-images/Players45.jpg",
+            "Player-images/Richard.jpg",
+            "Player-images/pic1.jpg",
+        ];
+
+        let currentWallpaperIndex = 0;
+
+        // Function to change the background image
+        function changeWallpaper() {
+            document.body.style.backgroundImage = `url(${wallpapers[currentWallpaperIndex]})`;
+            currentWallpaperIndex = (currentWallpaperIndex + 1) % wallpapers.length; // Loop back to the first wallpaper
+        }
+
+        // Change the background every 3 seconds (3000ms)
+        setInterval(changeWallpaper, 3000);
+
+        // Initially set the background when the page loads
+        changeWallpaper();
+    </script>
+
+
+
+        <header>
+            <nav class="navbar">
+              <div class="logo">
+                <a href="new.html"><img src="images/logo.png" alt="Champions FC Logo"></a>
+                <span class="Brand-name">CHAMPIONS FC</span>
+              </div>
+              <button class="menu-toggle" onclick="toggleMenu()" >&#9776;</button>
+              <ul class="nav-links" id="nav-menu">
+                <li><a href="#live-scores">Matches</a></li>
+                <li><a href="Playerprofile.html">Team</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#cta-section">Contact</a></li>
+            </ul>
+           
+            
+            
+              
+              <div class="social-icons">
+                
+                
+              </div>
+            </nav>
+          </header>
+          
+  
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Football Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    
+        <header class="hero">
+            <div class="overlay">
+                <div class="hero-content">
+                    <h1>Welcome to Our Football World</h1>
+                    <p>Stay up to date with the latest news, match schedules, and more.</p>
+                    <div class="cta-buttons">
+                        <button class="cta-btn" onclick="location.href='#footer'">Join Us</button>
+
+                        <a href="Playerprofile.html" class="cta-btn">Meet the Team</a>
+                    </div>
+                </div>
+            </div>
+           
+        </header>
+        <section class="news-section" id="news">
+            <div class="container">
+                <h2>Latest News</h2>
+                <p>Stay up to date with the latest football news, match updates, and more.</p>
+                <div class="news-cards">
+                    <div class="news-card">
+                        <img src="images/img5.jpg" alt="News 1">
+                        <div class="news-content">
+                            <h3>Team Wins Championship</h3>
+                            <p>Our team clinched the championship with a thrilling victory! Find out all the exciting moments from the match.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="images/img6.jpg" alt="News 2">
+                        <div class="news-content">
+                            <h3>Transfer News: Star Player Signs</h3>
+                            <p>Our star player has signed a new deal. Here's everything you need to know about the transfer.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="images/CFCC8.jpg" alt="News 3">
+                        <div class="news-content">
+                            <h3>Injury Update: Key Player Recovering</h3>
+                            <p>Injury news: Our key player is on the road to recovery. Read more about the injury and rehabilitation process.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="live-score-section" id="live-scores">
+                <div class="container">
+                    <h2>Live Match Scores</h2>
+                    <iframe 
+                        id="sofa-standings-embed-125227-67503" 
+                        src="https://widgets.sofascore.com/embed/tournament/125227/season/67503/standings/Zone%203?widgetTitle=Zone%203&showCompetitionLogo=true" 
+                        style="height:723px; max-width:768px; width:100%; border:0; overflow:hidden;" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        allowfullscreen>
+                    </iframe>
+                    <div style="font-size:12px; font-family:Arial, sans-serif; text-align:left;">
+                        Standings provided by <a target="_blank" href="https://www.sofascore.com/">Sofascore</a>
+                    </div>
+                </div>
+            <section class="managers-quotes">
+                <h2>Managers' Wisdom</h2>
+                <p class="quote-intro">Inspirational quotes from top football managers.</p>
+                <div class="quotes-container">
+                    <div class="quote-card">
+                        <p class="quote-text">"I don't believe in luck, I believe in hard work." - <strong>Jose Mourinho</strong></p>
+                    </div>
+                    <div class="quote-card">
+                        <p class="quote-text">"In football, the worst things are excuses. The best thing is to try to do it better." - <strong>Louis van Gaal</strong></p>
+                    </div>
+                   
+                    <div class="quote-card">
+                        <p class="quote-text">"Football is a game of mistakes. Whoever makes the fewest mistakes wins." - <strong>General Marcus
+
+                        </strong></p>
+                    </div>
+                </div>
+                 <section class="stats">
+                <div class="stat-item">
+                    <h2 id="player-count" class="counter">0</h2>
+                    <p>Number of Players</p>
+                </div>
+                <div class="stat-item">
+                    <h2 id="matches-count" class="counter">0</h2>
+                    <p>Matches Played</p>
+                </div>
+                <div class="stat-item">
+                    <h2 id="trophies-count" class="counter">0</h2>
+                    <p>Trophies Won</p>
+                </div>
+            </section>
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                    animateCounter("player-count", 0, 25, 2000);
+                    animateCounter("matches-count", 0, 100, 2500);
+                    animateCounter("trophies-count", 0, 10, 1500);
+                });
+            </script>
+               
+            
+        </section>
+        <section class="video-section">
+            <h2>Latest Match Highlights</h2>
+            <div class="video-container">
+                <div class="video-card">
+                    <video width="560" height="315" controls>
+                        <source src="video/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Match Highlights: </p>
+                </div>
+                <div class="video-card">
+                    <video width="560" height="315" controls>
+                        <source src="video/video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Match Highlights: Training Grounds</p>
+                </div>
+            </div>
+        </section>
+        
+            </div>
+        </section>
+        
+            </div>
+        </section>
+       
+            <section id="gallery" class="gallery">
+                <h2>Player Gallery</h2>
+                <div class="slider-container">
+                    <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="gallery-slider">
+                        <div class="gallery-item">
+                            <img src="Player-images/Richard.jpg" alt="Nana Kofi Bermah">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="Player-images/img1.jpg" alt="Jane Smith">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="Player-images/IMG-20241202-WA0004.jpg" alt="Saviola">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="Player-images/IMG-20241202-WA0008.jpg" alt="Kweku Victor Adjei">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="Player-images/IMG-20241202-WA0008.jpg" alt="Jamos Brown">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="Player-images/IMG-20241202-WA0002.jpg" alt="Philip Siame">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="Player-images/IMG-20241202-WA0003.jpg"alt="Berma">
+                        </div>
+                        <!-- Add more gallery items as needed -->
+                    </div>
+                    <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </section>
+            <section class="about-section">
+    <div class="about-images">
+        <figure>
+        <img src="Player-images/General.jpg" alt="Champions FC Team Photo">
+        <figcaption>Mark Anderson(Founder)</figcaption>
+        </figure>
+        <img src="P.jpg" alt="Match Action">
+    </div>
+
+    <h1>About Champions FC</h1>
+    <section>
+        <h2>Brief History</h2>
+        <p>
+            Champions FC, originally established as Christ Centered Football Club in November 2011, is a second division football team based in Nsawam, Eastern Region, Ghana. Initially founded with a Christian-oriented mission, the club blended faith-based mentorship with football, instilling values like discipline, teamwork, and integrity.
+        </p>
+        <p>
+            Joining Ghana Football Association’s Division Three shortly after formation, the club earned a promotion to Division Two in 2013. This milestone marked a significant step in its journey of growth and development.
+        </p>
+    </section>
+    <section>
+        <h2>Rebranding and Evolution</h2>
+        <p>
+            In 2013, the club rebranded as Champions FC, symbolizing a broader ambition to achieve higher competitive success. Despite the rebranding, its commitment to holistic player development remained steadfast, emphasizing technical skills, mental resilience, and personal growth.
+        </p>
+    </section>
+    <section>
+        <h2>Mission and Vision</h2>
+        <h3>Mission Statement</h3>
+        <p>
+            To nurture and develop young football talent in Ghana by providing a supportive and comprehensive training environment. Through dedicated coaching, mentorship, and community engagement, we strive to empower our players to excel both on and off the field.
+        </p>
+        <h3>Vision Statement</h3>
+        <p>
+            To be the leading football academy in Ghana recognized for shaping young athletes into skilled, confident, and responsible individuals.
+        </p>
+    </section>
+    <section>
+        <h2>Goals and Key Features</h2>
+        <p>
+            At Champions FC, the primary goal isn’t just to win games but to holistically develop every player, connecting with their individual needs and fostering growth.
+        </p>
+        <h3>Key Features</h3>
+        <ul>
+            <li><strong>Developmental Environment:</strong> Focus on individual player growth and sportsmanship.</li>
+            <li><strong>Coaching Style:</strong> An attacking, possession-based approach emphasizing entertainment.</li>
+            <li><strong>Player Requirements:</strong> Hardworking, honest, and humble athletes eager to learn and grow.</li>
+        </ul>
+    </section>
+</section>
+
+            
+        
+            </div>
+        </section>
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2>Stay Updated with the Latest News</h2>
+                <p>Sign up for our newsletter and never miss a moment of the action!</p>
+                <form class="cta-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="cta-btn">Sign Up</button>
+                </form>
+            </div>
+       
+
+<footer class="footer" id="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>Champions FC</h3>
+            <p>We are dedicated to developing football talent and nurturing future stars in Ghana.</p>
+        </div>
+        <div class="footer-middle">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#hero-content">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#fixtures">Fixtures</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h4>Follow Us</h4>
+            <div class="social-media">
+                <a href="https://facebook.com" target="" class="social-icon">Facebook</a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Champions FC. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+<script>
+    function openModal() {
+        document.getElementById("modal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("modal").style.display = "none";
+    }
+
+   
+
+</script>
+
+<!-- Modal Styles -->
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 60px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    }
+
+    .modal-content {
+        background-color: white;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 500px;
+        animation: modalZoomIn 0.3s ease-out;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    @keyframes modalZoomIn {
+        from {
+            transform: scale(0.7);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+</style>
+
+        
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
+</body>
+</html>
